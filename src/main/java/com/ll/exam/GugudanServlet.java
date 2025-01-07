@@ -12,7 +12,7 @@ import java.io.IOException;
 @WebServlet("/gugudan")
 public class GugudanServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
         Rq rq = new Rq(req, resp);
 
         int dan = rq.getIntParam("dan", 0);
